@@ -3,6 +3,6 @@ It uses DevExpress ASP.NET Core Blazor UI controls for data presentation, and De
 
 It allows to find a company using 10-digit Tax Identification Number (NIP). 
 
-Please try it out by going to navigation item “Searching”, then choose New. 
+Please try it out by going to navigation item “Searching” / "Nip Company", then choose New. 
 In provided box next to the caption “Nip” type in the 10-digit number and press SEARCH.
 
