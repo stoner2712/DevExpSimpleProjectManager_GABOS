@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="DevExpSimpleProjectManager">
+  <BOModel>
+    <Class Name="DevExpSimpleProjectManager.Module.BusinessObjects.Marketing.Customer" ObjectCaptionFormat="{0:FullName}" />
+    <Class Name="DevExpSimpleProjectManager.Module.BusinessObjects.Searching.NipCompany">
+      <OwnMembers>
+        <Member Name="Nip" EditMask="&quot;n2&quot;" DisplayFormat="true" EditMaskType="RegEx" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="Planning">
+        <Items>
+          <Item Id="@ba06edfe-4192-4e43-bbb4-1bb4dbfcbe40" Caption="Employee" ViewId="Person_ListView" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="22.1.5.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="NipCompany_DetailView">
+      <Items>
+        <PropertyEditor Id="Nip" MaxLength="10" EditMaskType="Simple" EditMask="" />
+        <ActionContainerViewItem Id="SEARCH" Caption="Search" ActionContainer="MyCategory" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="NipCompany" RelativeSize="100">
+              <LayoutItem Id="Nip" RelativeSize="7.28051391862955" />
+              <LayoutItem Id="MyActionContainer" ViewItem="SEARCH" Index="1" RelativeSize="92.71948608137045" IsNewNode="True" />
+              <LayoutItem Id="StatusVat" Index="3" RelativeSize="79.75308641975309" Removed="True" />
+              <LayoutItem Id="CompanyName" RelativeSize="5.925925925925926" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

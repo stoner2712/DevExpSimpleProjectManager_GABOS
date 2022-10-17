@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="FindCompany_DetailView">
+      <Items Id="Items">
+        <ActionContainerViewItem Id="CompanySearch" ActionContainer="MyCategory" Caption="CompanySearch" PaintStyle="Default" />
+        <StaticText Id="Text" Text="Provide 10 digit Nip number and press search button" Caption="Text" />
+      </Items>
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" RelativeSize="100" IsCollapsibleGroup="True">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="FindCompany" RelativeSize="100" Caption="FindCompany">
+              <LayoutGroup Id="Auto573b6942-2803-49a2-9b8c-c850511e3208" ShowCaption="False" Caption="Auto573b6942-2803-49a2-9b8c-c850511e3208(4)" Direction="Vertical" Index="0" RelativeSize="100">
+                <LayoutItem Id="Text" ViewItem="Text" Index="0" RelativeSize="4.927007299270073" />
+                <LayoutGroup Id="Auto9484b9af-3da2-4aa0-90f9-7999b7c6bd19" ShowCaption="False" Caption="Auto9484b9af-3da2-4aa0-90f9-7999b7c6bd19(6)" Direction="Vertical" Index="1" RelativeSize="95.07299270072993">
+                  <LayoutGroup Id="Item1" ShowCaption="False" CaptionLocation="Top" Index="0" RelativeSize="100" Caption="Nip">
+                    <LayoutItem Id="Nip" ViewItem="Nip" Index="0" RelativeSize="5.950095969289827" />
+                    <LayoutItem Id="CompanySearch" ViewItem="CompanySearch" Index="1" RelativeSize="94.04990403071017" />
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutItem Id="Nip" ViewItem="Nip" Index="0" RelativeSize="6.213592233009709" Removed="True" />
+              <LayoutItem Id="Name" ViewItem="Name" Index="1" RelativeSize="4.660194174757281" Removed="True" />
+              <LayoutItem Id="StatusVat" ViewItem="StatusVat" Index="1" RelativeSize="92.21789883268482" ShowCaption="False" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
